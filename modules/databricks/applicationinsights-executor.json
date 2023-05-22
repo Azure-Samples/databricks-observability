@@ -1,0 +1,1697 @@
+{
+    "instrumentation": {
+        "logging": {
+            "level": "DEBUG"
+        }
+    },
+    "selfDiagnostics": {
+        "level": "DEBUG"
+    },
+    "customDimensions": {
+        "DB_CLUSTER_ID": "${DB_CLUSTER_ID}",
+        "DB_IS_DRIVER": "${DB_IS_DRIVER}",
+        "DB_INSTANCE_TYPE": "${DB_INSTANCE_TYPE}",
+        "DB_CONTAINER_IP": "${DB_CONTAINER_IP}",
+        "DB_IS_JOB_CLUSTER": "${DB_IS_JOB_CLUSTER}"
+    },
+    "role": {
+        "name": "${DB_CLUSTER_NAME}"
+    },
+    "jmxMetrics": [
+        {
+            "name": "java.lang:name=Code Cache.CollectionUsage",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "CollectionUsage"
+        },
+        {
+            "name": "java.lang:name=Code Cache.CollectionUsageThreshold",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "CollectionUsageThreshold"
+        },
+        {
+            "name": "java.lang:name=Code Cache.CollectionUsageThresholdCount",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=Code Cache.CollectionUsageThresholdExceeded",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=Code Cache.CollectionUsageThresholdSupported",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=Code Cache.MemoryManagerNames",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "MemoryManagerNames"
+        },
+        {
+            "name": "java.lang:name=Code Cache.Name",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=Code Cache.ObjectName",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=Code Cache.PeakUsage",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "PeakUsage"
+        },
+        {
+            "name": "java.lang:name=Code Cache.Type",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "Type"
+        },
+        {
+            "name": "java.lang:name=Code Cache.Usage",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "Usage"
+        },
+        {
+            "name": "java.lang:name=Code Cache.UsageThreshold",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "UsageThreshold"
+        },
+        {
+            "name": "java.lang:name=Code Cache.UsageThresholdCount",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "UsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=Code Cache.UsageThresholdExceeded",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "UsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=Code Cache.UsageThresholdSupported",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "UsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=Code Cache.Valid",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:name=CodeCacheManager.MemoryPoolNames",
+            "objectName": "java.lang:name=CodeCacheManager,type=MemoryManager",
+            "attribute": "MemoryPoolNames"
+        },
+        {
+            "name": "java.lang:name=CodeCacheManager.Name",
+            "objectName": "java.lang:name=CodeCacheManager,type=MemoryManager",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=CodeCacheManager.ObjectName",
+            "objectName": "java.lang:name=CodeCacheManager,type=MemoryManager",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=CodeCacheManager.Valid",
+            "objectName": "java.lang:name=CodeCacheManager,type=MemoryManager",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.CollectionUsage",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "CollectionUsage"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.CollectionUsageThreshold",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "CollectionUsageThreshold"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.CollectionUsageThresholdCount",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.CollectionUsageThresholdExceeded",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.CollectionUsageThresholdSupported",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.MemoryManagerNames",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "MemoryManagerNames"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.Name",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.ObjectName",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.PeakUsage",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "PeakUsage"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.Type",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "Type"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.Usage",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "Usage"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.UsageThreshold",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "UsageThreshold"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.UsageThresholdCount",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "UsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.UsageThresholdExceeded",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "UsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.UsageThresholdSupported",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "UsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.Valid",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:name=Metaspace Manager.MemoryPoolNames",
+            "objectName": "java.lang:name=Metaspace Manager,type=MemoryManager",
+            "attribute": "MemoryPoolNames"
+        },
+        {
+            "name": "java.lang:name=Metaspace Manager.Name",
+            "objectName": "java.lang:name=Metaspace Manager,type=MemoryManager",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=Metaspace Manager.ObjectName",
+            "objectName": "java.lang:name=Metaspace Manager,type=MemoryManager",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=Metaspace Manager.Valid",
+            "objectName": "java.lang:name=Metaspace Manager,type=MemoryManager",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:name=Metaspace.CollectionUsage",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "CollectionUsage"
+        },
+        {
+            "name": "java.lang:name=Metaspace.CollectionUsageThreshold",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "CollectionUsageThreshold"
+        },
+        {
+            "name": "java.lang:name=Metaspace.CollectionUsageThresholdCount",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=Metaspace.CollectionUsageThresholdExceeded",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=Metaspace.CollectionUsageThresholdSupported",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=Metaspace.MemoryManagerNames",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "MemoryManagerNames"
+        },
+        {
+            "name": "java.lang:name=Metaspace.Name",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=Metaspace.ObjectName",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=Metaspace.PeakUsage",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "PeakUsage"
+        },
+        {
+            "name": "java.lang:name=Metaspace.Type",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "Type"
+        },
+        {
+            "name": "java.lang:name=Metaspace.Usage",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "Usage"
+        },
+        {
+            "name": "java.lang:name=Metaspace.UsageThreshold",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "UsageThreshold"
+        },
+        {
+            "name": "java.lang:name=Metaspace.UsageThresholdCount",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "UsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=Metaspace.UsageThresholdExceeded",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "UsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=Metaspace.UsageThresholdSupported",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "UsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=Metaspace.Valid",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.CollectionUsage",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "CollectionUsage"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.CollectionUsageThreshold",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "CollectionUsageThreshold"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.CollectionUsageThresholdCount",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.CollectionUsageThresholdExceeded",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.CollectionUsageThresholdSupported",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.MemoryManagerNames",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "MemoryManagerNames"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.Name",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.ObjectName",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.PeakUsage",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "PeakUsage"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.Type",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "Type"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.Usage",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "Usage"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.UsageThreshold",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "UsageThreshold"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.UsageThresholdCount",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "UsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.UsageThresholdExceeded",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "UsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.UsageThresholdSupported",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "UsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.Valid",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:name=PS MarkSweep.CollectionCount",
+            "objectName": "java.lang:name=PS MarkSweep,type=GarbageCollector",
+            "attribute": "CollectionCount"
+        },
+        {
+            "name": "java.lang:name=PS MarkSweep.CollectionTime",
+            "objectName": "java.lang:name=PS MarkSweep,type=GarbageCollector",
+            "attribute": "CollectionTime"
+        },
+        {
+            "name": "java.lang:name=PS MarkSweep.LastGcInfo",
+            "objectName": "java.lang:name=PS MarkSweep,type=GarbageCollector",
+            "attribute": "LastGcInfo"
+        },
+        {
+            "name": "java.lang:name=PS MarkSweep.MemoryPoolNames",
+            "objectName": "java.lang:name=PS MarkSweep,type=GarbageCollector",
+            "attribute": "MemoryPoolNames"
+        },
+        {
+            "name": "java.lang:name=PS MarkSweep.Name",
+            "objectName": "java.lang:name=PS MarkSweep,type=GarbageCollector",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=PS MarkSweep.ObjectName",
+            "objectName": "java.lang:name=PS MarkSweep,type=GarbageCollector",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=PS MarkSweep.Valid",
+            "objectName": "java.lang:name=PS MarkSweep,type=GarbageCollector",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.CollectionUsage",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "CollectionUsage"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.CollectionUsageThreshold",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "CollectionUsageThreshold"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.CollectionUsageThresholdCount",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.CollectionUsageThresholdExceeded",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.CollectionUsageThresholdSupported",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.MemoryManagerNames",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "MemoryManagerNames"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.Name",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.ObjectName",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.PeakUsage",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "PeakUsage"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.Type",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "Type"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.Usage",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "Usage"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.UsageThreshold",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "UsageThreshold"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.UsageThresholdCount",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "UsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.UsageThresholdExceeded",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "UsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.UsageThresholdSupported",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "UsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.Valid",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:name=PS Scavenge.CollectionCount",
+            "objectName": "java.lang:name=PS Scavenge,type=GarbageCollector",
+            "attribute": "CollectionCount"
+        },
+        {
+            "name": "java.lang:name=PS Scavenge.CollectionTime",
+            "objectName": "java.lang:name=PS Scavenge,type=GarbageCollector",
+            "attribute": "CollectionTime"
+        },
+        {
+            "name": "java.lang:name=PS Scavenge.LastGcInfo",
+            "objectName": "java.lang:name=PS Scavenge,type=GarbageCollector",
+            "attribute": "LastGcInfo"
+        },
+        {
+            "name": "java.lang:name=PS Scavenge.MemoryPoolNames",
+            "objectName": "java.lang:name=PS Scavenge,type=GarbageCollector",
+            "attribute": "MemoryPoolNames"
+        },
+        {
+            "name": "java.lang:name=PS Scavenge.Name",
+            "objectName": "java.lang:name=PS Scavenge,type=GarbageCollector",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=PS Scavenge.ObjectName",
+            "objectName": "java.lang:name=PS Scavenge,type=GarbageCollector",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=PS Scavenge.Valid",
+            "objectName": "java.lang:name=PS Scavenge,type=GarbageCollector",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.CollectionUsage",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "CollectionUsage"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.CollectionUsageThreshold",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "CollectionUsageThreshold"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.CollectionUsageThresholdCount",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.CollectionUsageThresholdExceeded",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.CollectionUsageThresholdSupported",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.MemoryManagerNames",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "MemoryManagerNames"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.Name",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.ObjectName",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.PeakUsage",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "PeakUsage"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.Type",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "Type"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.Usage",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "Usage"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.UsageThreshold",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "UsageThreshold"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.UsageThresholdCount",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "UsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.UsageThresholdExceeded",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "UsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.UsageThresholdSupported",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "UsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.Valid",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:type=ClassLoading.LoadedClassCount",
+            "objectName": "java.lang:type=ClassLoading",
+            "attribute": "LoadedClassCount"
+        },
+        {
+            "name": "java.lang:type=ClassLoading.ObjectName",
+            "objectName": "java.lang:type=ClassLoading",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:type=ClassLoading.TotalLoadedClassCount",
+            "objectName": "java.lang:type=ClassLoading",
+            "attribute": "TotalLoadedClassCount"
+        },
+        {
+            "name": "java.lang:type=ClassLoading.UnloadedClassCount",
+            "objectName": "java.lang:type=ClassLoading",
+            "attribute": "UnloadedClassCount"
+        },
+        {
+            "name": "java.lang:type=ClassLoading.Verbose",
+            "objectName": "java.lang:type=ClassLoading",
+            "attribute": "Verbose"
+        },
+        {
+            "name": "java.lang:type=Compilation.CompilationTimeMonitoringSupported",
+            "objectName": "java.lang:type=Compilation",
+            "attribute": "CompilationTimeMonitoringSupported"
+        },
+        {
+            "name": "java.lang:type=Compilation.Name",
+            "objectName": "java.lang:type=Compilation",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:type=Compilation.ObjectName",
+            "objectName": "java.lang:type=Compilation",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:type=Compilation.TotalCompilationTime",
+            "objectName": "java.lang:type=Compilation",
+            "attribute": "TotalCompilationTime"
+        },
+        {
+            "name": "java.lang:type=Memory.HeapMemoryUsage",
+            "objectName": "java.lang:type=Memory",
+            "attribute": "HeapMemoryUsage"
+        },
+        {
+            "name": "java.lang:type=Memory.NonHeapMemoryUsage",
+            "objectName": "java.lang:type=Memory",
+            "attribute": "NonHeapMemoryUsage"
+        },
+        {
+            "name": "java.lang:type=Memory.ObjectName",
+            "objectName": "java.lang:type=Memory",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:type=Memory.ObjectPendingFinalizationCount",
+            "objectName": "java.lang:type=Memory",
+            "attribute": "ObjectPendingFinalizationCount"
+        },
+        {
+            "name": "java.lang:type=Memory.Verbose",
+            "objectName": "java.lang:type=Memory",
+            "attribute": "Verbose"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.Arch",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "Arch"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.AvailableProcessors",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "AvailableProcessors"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.CommittedVirtualMemorySize",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "CommittedVirtualMemorySize"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.FreePhysicalMemorySize",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "FreePhysicalMemorySize"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.FreeSwapSpaceSize",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "FreeSwapSpaceSize"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.MaxFileDescriptorCount",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "MaxFileDescriptorCount"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.Name",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.ObjectName",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.OpenFileDescriptorCount",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "OpenFileDescriptorCount"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.ProcessCpuLoad",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "ProcessCpuLoad"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.ProcessCpuTime",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "ProcessCpuTime"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.SystemCpuLoad",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "SystemCpuLoad"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.SystemLoadAverage",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "SystemLoadAverage"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.TotalPhysicalMemorySize",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "TotalPhysicalMemorySize"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.TotalSwapSpaceSize",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "TotalSwapSpaceSize"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.Version",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "Version"
+        },
+        {
+            "name": "java.lang:type=Runtime.BootClassPath",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "BootClassPath"
+        },
+        {
+            "name": "java.lang:type=Runtime.BootClassPathSupported",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "BootClassPathSupported"
+        },
+        {
+            "name": "java.lang:type=Runtime.ClassPath",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "ClassPath"
+        },
+        {
+            "name": "java.lang:type=Runtime.InputArguments",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "InputArguments"
+        },
+        {
+            "name": "java.lang:type=Runtime.LibraryPath",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "LibraryPath"
+        },
+        {
+            "name": "java.lang:type=Runtime.ManagementSpecVersion",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "ManagementSpecVersion"
+        },
+        {
+            "name": "java.lang:type=Runtime.Name",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:type=Runtime.ObjectName",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:type=Runtime.SpecName",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "SpecName"
+        },
+        {
+            "name": "java.lang:type=Runtime.SpecVendor",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "SpecVendor"
+        },
+        {
+            "name": "java.lang:type=Runtime.SpecVersion",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "SpecVersion"
+        },
+        {
+            "name": "java.lang:type=Runtime.StartTime",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "StartTime"
+        },
+        {
+            "name": "java.lang:type=Runtime.SystemProperties",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "SystemProperties"
+        },
+        {
+            "name": "java.lang:type=Runtime.Uptime",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "Uptime"
+        },
+        {
+            "name": "java.lang:type=Runtime.VmName",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "VmName"
+        },
+        {
+            "name": "java.lang:type=Runtime.VmVendor",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "VmVendor"
+        },
+        {
+            "name": "java.lang:type=Runtime.VmVersion",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "VmVersion"
+        },
+        {
+            "name": "java.lang:type=Threading.AllThreadIds",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "AllThreadIds"
+        },
+        {
+            "name": "java.lang:type=Threading.CurrentThreadAllocatedBytes",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "CurrentThreadAllocatedBytes"
+        },
+        {
+            "name": "java.lang:type=Threading.CurrentThreadCpuTime",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "CurrentThreadCpuTime"
+        },
+        {
+            "name": "java.lang:type=Threading.CurrentThreadCpuTimeSupported",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "CurrentThreadCpuTimeSupported"
+        },
+        {
+            "name": "java.lang:type=Threading.CurrentThreadUserTime",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "CurrentThreadUserTime"
+        },
+        {
+            "name": "java.lang:type=Threading.DaemonThreadCount",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "DaemonThreadCount"
+        },
+        {
+            "name": "java.lang:type=Threading.ObjectMonitorUsageSupported",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ObjectMonitorUsageSupported"
+        },
+        {
+            "name": "java.lang:type=Threading.ObjectName",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:type=Threading.PeakThreadCount",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "PeakThreadCount"
+        },
+        {
+            "name": "java.lang:type=Threading.SynchronizerUsageSupported",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "SynchronizerUsageSupported"
+        },
+        {
+            "name": "java.lang:type=Threading.ThreadAllocatedMemoryEnabled",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ThreadAllocatedMemoryEnabled"
+        },
+        {
+            "name": "java.lang:type=Threading.ThreadAllocatedMemorySupported",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ThreadAllocatedMemorySupported"
+        },
+        {
+            "name": "java.lang:type=Threading.ThreadContentionMonitoringEnabled",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ThreadContentionMonitoringEnabled"
+        },
+        {
+            "name": "java.lang:type=Threading.ThreadContentionMonitoringSupported",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ThreadContentionMonitoringSupported"
+        },
+        {
+            "name": "java.lang:type=Threading.ThreadCount",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ThreadCount"
+        },
+        {
+            "name": "java.lang:type=Threading.ThreadCpuTimeEnabled",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ThreadCpuTimeEnabled"
+        },
+        {
+            "name": "java.lang:type=Threading.ThreadCpuTimeSupported",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ThreadCpuTimeSupported"
+        },
+        {
+            "name": "java.lang:type=Threading.TotalStartedThreadCount",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "TotalStartedThreadCount"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.compilationTime.50thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.compilationTime.75thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.compilationTime.95thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.compilationTime.98thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.compilationTime.999thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.compilationTime.99thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.compilationTime.Count",
+            "objectName": "metrics:name=spark.*.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.compilationTime.Max",
+            "objectName": "metrics:name=spark.*.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.compilationTime.Mean",
+            "objectName": "metrics:name=spark.*.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.compilationTime.Min",
+            "objectName": "metrics:name=spark.*.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.compilationTime.SnapshotSize",
+            "objectName": "metrics:name=spark.*.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "SnapshotSize"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.compilationTime.StdDev",
+            "objectName": "metrics:name=spark.*.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedClassSize.50thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedClassSize.75thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedClassSize.95thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedClassSize.98thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedClassSize.999thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedClassSize.99thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedClassSize.Count",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedClassSize.Max",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedClassSize.Mean",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedClassSize.Min",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedClassSize.SnapshotSize",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "SnapshotSize"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedClassSize.StdDev",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedMethodSize.50thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedMethodSize.75thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedMethodSize.95thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedMethodSize.98thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedMethodSize.999thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedMethodSize.99thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedMethodSize.Count",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedMethodSize.Max",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedMethodSize.Mean",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedMethodSize.Min",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedMethodSize.SnapshotSize",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "SnapshotSize"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.generatedMethodSize.StdDev",
+            "objectName": "metrics:name=spark.*.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.sourceCodeSize.50thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.sourceCodeSize.75thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.sourceCodeSize.95thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.sourceCodeSize.98thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.sourceCodeSize.999thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.sourceCodeSize.99thPercentile",
+            "objectName": "metrics:name=spark.*.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.sourceCodeSize.Count",
+            "objectName": "metrics:name=spark.*.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.sourceCodeSize.Max",
+            "objectName": "metrics:name=spark.*.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.sourceCodeSize.Mean",
+            "objectName": "metrics:name=spark.*.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.sourceCodeSize.Min",
+            "objectName": "metrics:name=spark.*.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.sourceCodeSize.SnapshotSize",
+            "objectName": "metrics:name=spark.*.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "SnapshotSize"
+        },
+        {
+            "name": "spark.worker.CodeGenerator.sourceCodeSize.StdDev",
+            "objectName": "metrics:name=spark.*.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.worker.Databricks.directoryCommit.autoVacuumCount",
+            "objectName": "metrics:name=spark.*.Databricks.directoryCommit.autoVacuumCount,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.directoryCommit.deletedFilesFiltered",
+            "objectName": "metrics:name=spark.*.Databricks.directoryCommit.deletedFilesFiltered,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.directoryCommit.filterListingCount",
+            "objectName": "metrics:name=spark.*.Databricks.directoryCommit.filterListingCount,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.directoryCommit.jobCommitCompleted",
+            "objectName": "metrics:name=spark.*.Databricks.directoryCommit.jobCommitCompleted,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.directoryCommit.markerReadErrors",
+            "objectName": "metrics:name=spark.*.Databricks.directoryCommit.markerReadErrors,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.directoryCommit.markerRefreshCount",
+            "objectName": "metrics:name=spark.*.Databricks.directoryCommit.markerRefreshCount,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.directoryCommit.markerRefreshErrors",
+            "objectName": "metrics:name=spark.*.Databricks.directoryCommit.markerRefreshErrors,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.directoryCommit.markersRead",
+            "objectName": "metrics:name=spark.*.Databricks.directoryCommit.markersRead,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.directoryCommit.repeatedListCount",
+            "objectName": "metrics:name=spark.*.Databricks.directoryCommit.repeatedListCount,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.directoryCommit.uncommittedFilesFiltered",
+            "objectName": "metrics:name=spark.*.Databricks.directoryCommit.uncommittedFilesFiltered,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.directoryCommit.untrackedFilesFound",
+            "objectName": "metrics:name=spark.*.Databricks.directoryCommit.untrackedFilesFound,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.directoryCommit.vacuumCount",
+            "objectName": "metrics:name=spark.*.Databricks.directoryCommit.vacuumCount,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.directoryCommit.vacuumErrors",
+            "objectName": "metrics:name=spark.*.Databricks.directoryCommit.vacuumErrors,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.preemption.numChecks",
+            "objectName": "metrics:name=spark.*.Databricks.preemption.numChecks,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.preemption.numPoolsAutoExpired",
+            "objectName": "metrics:name=spark.*.Databricks.preemption.numPoolsAutoExpired,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.preemption.numTasksPreempted",
+            "objectName": "metrics:name=spark.*.Databricks.preemption.numTasksPreempted,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.preemption.poolStarvationMillis",
+            "objectName": "metrics:name=spark.*.Databricks.preemption.poolStarvationMillis,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.preemption.schedulerOverheadNanos",
+            "objectName": "metrics:name=spark.*.Databricks.preemption.schedulerOverheadNanos,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.preemption.taskTimeWastedMillis",
+            "objectName": "metrics:name=spark.*.Databricks.preemption.taskTimeWastedMillis,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.taskSchedulingLanes.activePools",
+            "objectName": "metrics:name=spark.*.Databricks.taskSchedulingLanes.activePools,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.taskSchedulingLanes.bypassLaneActivePools",
+            "objectName": "metrics:name=spark.*.Databricks.taskSchedulingLanes.bypassLaneActivePools,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.taskSchedulingLanes.fastLaneActivePools",
+            "objectName": "metrics:name=spark.*.Databricks.taskSchedulingLanes.fastLaneActivePools,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.taskSchedulingLanes.finishedQueriesTotalTaskTimeNs",
+            "objectName": "metrics:name=spark.*.Databricks.taskSchedulingLanes.finishedQueriesTotalTaskTimeNs,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.taskSchedulingLanes.laneCleanup.markedPools",
+            "objectName": "metrics:name=spark.*.Databricks.taskSchedulingLanes.laneCleanup.markedPools,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.taskSchedulingLanes.laneCleanup.twoPhasePoolsCleaned",
+            "objectName": "metrics:name=spark.*.Databricks.taskSchedulingLanes.laneCleanup.twoPhasePoolsCleaned,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.taskSchedulingLanes.laneCleanup.zombiePoolsCleaned",
+            "objectName": "metrics:name=spark.*.Databricks.taskSchedulingLanes.laneCleanup.zombiePoolsCleaned,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.taskSchedulingLanes.preemption.slotTransferNumSuccessfulPreemptionIterations",
+            "objectName": "metrics:name=spark.*.Databricks.taskSchedulingLanes.preemption.slotTransferNumSuccessfulPreemptionIterations,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.taskSchedulingLanes.preemption.slotTransferNumTasksPreempted",
+            "objectName": "metrics:name=spark.*.Databricks.taskSchedulingLanes.preemption.slotTransferNumTasksPreempted,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.taskSchedulingLanes.preemption.slotTransferWastedTaskTimeNs",
+            "objectName": "metrics:name=spark.*.Databricks.taskSchedulingLanes.preemption.slotTransferWastedTaskTimeNs,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.taskSchedulingLanes.slotReservation.numGradualDecrease",
+            "objectName": "metrics:name=spark.*.Databricks.taskSchedulingLanes.slotReservation.numGradualDecrease,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.taskSchedulingLanes.slotReservation.numQuickDrop",
+            "objectName": "metrics:name=spark.*.Databricks.taskSchedulingLanes.slotReservation.numQuickDrop,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.taskSchedulingLanes.slotReservation.numQuickJump",
+            "objectName": "metrics:name=spark.*.Databricks.taskSchedulingLanes.slotReservation.numQuickJump,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.taskSchedulingLanes.slotReservation.slotsReserved",
+            "objectName": "metrics:name=spark.*.Databricks.taskSchedulingLanes.slotReservation.slotsReserved,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.taskSchedulingLanes.slowLaneActivePools",
+            "objectName": "metrics:name=spark.*.Databricks.taskSchedulingLanes.slowLaneActivePools,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.Databricks.taskSchedulingLanes.totalQueryGroupsFinished",
+            "objectName": "metrics:name=spark.*.Databricks.taskSchedulingLanes.totalQueryGroupsFinished,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.DirectPoolMemory",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.DirectPoolMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.JVMHeapMemory",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.JVMHeapMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.JVMOffHeapMemory",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.JVMOffHeapMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.MajorGCCount",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.MajorGCCount,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.MajorGCTime",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.MajorGCTime,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.MappedPoolMemory",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.MappedPoolMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.MinorGCCount",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.MinorGCCount,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.MinorGCTime",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.MinorGCTime,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.OffHeapExecutionMemory",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.OffHeapExecutionMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.OffHeapStorageMemory",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.OffHeapStorageMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.OffHeapUnifiedMemory",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.OffHeapUnifiedMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.OnHeapExecutionMemory",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.OnHeapExecutionMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.OnHeapStorageMemory",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.OnHeapStorageMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.OnHeapUnifiedMemory",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.OnHeapUnifiedMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.ProcessTreeJVMRSSMemory",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.ProcessTreeJVMRSSMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.ProcessTreeJVMVMemory",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.ProcessTreeJVMVMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.ProcessTreeOtherRSSMemory",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.ProcessTreeOtherRSSMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.ProcessTreeOtherVMemory",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.ProcessTreeOtherVMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.ProcessTreePythonRSSMemory",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.ProcessTreePythonRSSMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.ProcessTreePythonVMemory",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.ProcessTreePythonVMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExecutorMetrics.TotalGCTime",
+            "objectName": "metrics:name=spark.*.ExecutorMetrics.TotalGCTime,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExternalShuffle.shuffle-client.usedDirectMemory",
+            "objectName": "metrics:name=spark.*.ExternalShuffle.shuffle-client.usedDirectMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.ExternalShuffle.shuffle-client.usedHeapMemory",
+            "objectName": "metrics:name=spark.*.ExternalShuffle.shuffle-client.usedHeapMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.HiveExternalCatalog.fileCacheHits",
+            "objectName": "metrics:name=spark.*.HiveExternalCatalog.fileCacheHits,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.HiveExternalCatalog.filesDiscovered",
+            "objectName": "metrics:name=spark.*.HiveExternalCatalog.filesDiscovered,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.HiveExternalCatalog.hiveClientCalls",
+            "objectName": "metrics:name=spark.*.HiveExternalCatalog.hiveClientCalls,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.HiveExternalCatalog.parallelListingJobCount",
+            "objectName": "metrics:name=spark.*.HiveExternalCatalog.parallelListingJobCount,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.HiveExternalCatalog.partitionsFetched",
+            "objectName": "metrics:name=spark.*.HiveExternalCatalog.partitionsFetched,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.JVMCPU.jvmCpuTime",
+            "objectName": "metrics:name=spark.*.JVMCPU.jvmCpuTime,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.executor.bytesRead",
+            "objectName": "metrics:name=spark.*.executor.bytesRead,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.bytesWritten",
+            "objectName": "metrics:name=spark.*.executor.bytesWritten,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.cpuTime",
+            "objectName": "metrics:name=spark.*.executor.cpuTime,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.deserializeCpuTime",
+            "objectName": "metrics:name=spark.*.executor.deserializeCpuTime,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.deserializeTime",
+            "objectName": "metrics:name=spark.*.executor.deserializeTime,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.diskBytesSpilled",
+            "objectName": "metrics:name=spark.*.executor.diskBytesSpilled,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.filesystem.file.largeRead_ops",
+            "objectName": "metrics:name=spark.*.executor.filesystem.file.largeRead_ops,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.executor.filesystem.file.read_bytes",
+            "objectName": "metrics:name=spark.*.executor.filesystem.file.read_bytes,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.executor.filesystem.file.read_ops",
+            "objectName": "metrics:name=spark.*.executor.filesystem.file.read_ops,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.executor.filesystem.file.write_bytes",
+            "objectName": "metrics:name=spark.*.executor.filesystem.file.write_bytes,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.executor.filesystem.file.write_ops",
+            "objectName": "metrics:name=spark.*.executor.filesystem.file.write_ops,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.executor.filesystem.hdfs.largeRead_ops",
+            "objectName": "metrics:name=spark.*.executor.filesystem.hdfs.largeRead_ops,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.executor.filesystem.hdfs.read_bytes",
+            "objectName": "metrics:name=spark.*.executor.filesystem.hdfs.read_bytes,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.executor.filesystem.hdfs.read_ops",
+            "objectName": "metrics:name=spark.*.executor.filesystem.hdfs.read_ops,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.executor.filesystem.hdfs.write_bytes",
+            "objectName": "metrics:name=spark.*.executor.filesystem.hdfs.write_bytes,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.executor.filesystem.hdfs.write_ops",
+            "objectName": "metrics:name=spark.*.executor.filesystem.hdfs.write_ops,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.executor.jvmGCTime",
+            "objectName": "metrics:name=spark.*.executor.jvmGCTime,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.memoryBytesSpilled",
+            "objectName": "metrics:name=spark.*.executor.memoryBytesSpilled,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.recordsRead",
+            "objectName": "metrics:name=spark.*.executor.recordsRead,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.recordsWritten",
+            "objectName": "metrics:name=spark.*.executor.recordsWritten,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.resultSerializationTime",
+            "objectName": "metrics:name=spark.*.executor.resultSerializationTime,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.resultSize",
+            "objectName": "metrics:name=spark.*.executor.resultSize,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.runTime",
+            "objectName": "metrics:name=spark.*.executor.runTime,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.shuffleBytesWritten",
+            "objectName": "metrics:name=spark.*.executor.shuffleBytesWritten,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.shuffleFetchWaitTime",
+            "objectName": "metrics:name=spark.*.executor.shuffleFetchWaitTime,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.shuffleLocalBlocksFetched",
+            "objectName": "metrics:name=spark.*.executor.shuffleLocalBlocksFetched,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.shuffleLocalBytesRead",
+            "objectName": "metrics:name=spark.*.executor.shuffleLocalBytesRead,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.shuffleRecordsRead",
+            "objectName": "metrics:name=spark.*.executor.shuffleRecordsRead,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.shuffleRecordsWritten",
+            "objectName": "metrics:name=spark.*.executor.shuffleRecordsWritten,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.shuffleRemoteBlocksFetched",
+            "objectName": "metrics:name=spark.*.executor.shuffleRemoteBlocksFetched,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.shuffleRemoteBytesRead",
+            "objectName": "metrics:name=spark.*.executor.shuffleRemoteBytesRead,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.shuffleRemoteBytesReadToDisk",
+            "objectName": "metrics:name=spark.*.executor.shuffleRemoteBytesReadToDisk,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.shuffleTotalBytesRead",
+            "objectName": "metrics:name=spark.*.executor.shuffleTotalBytesRead,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.shuffleWriteTime",
+            "objectName": "metrics:name=spark.*.executor.shuffleWriteTime,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.succeededTasks",
+            "objectName": "metrics:name=spark.*.executor.succeededTasks,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.worker.executor.threadpool.activeTasks",
+            "objectName": "metrics:name=spark.*.executor.threadpool.activeTasks,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.executor.threadpool.completeTasks",
+            "objectName": "metrics:name=spark.*.executor.threadpool.completeTasks,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.executor.threadpool.currentPool_size",
+            "objectName": "metrics:name=spark.*.executor.threadpool.currentPool_size,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.executor.threadpool.maxPool_size",
+            "objectName": "metrics:name=spark.*.executor.threadpool.maxPool_size,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.worker.executor.threadpool.startedTasks",
+            "objectName": "metrics:name=spark.*.executor.threadpool.startedTasks,type=gauges",
+            "attribute": "Number"
+        }
+    ]
+}

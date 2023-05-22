@@ -1,0 +1,3502 @@
+{
+    "instrumentation": {
+        "logging": {
+            "level": "DEBUG"
+        }
+    },
+    "selfDiagnostics": {
+        "level": "DEBUG"
+    },
+    "customDimensions": {
+        "DB_CLUSTER_ID": "${DB_CLUSTER_ID}",
+        "DB_IS_DRIVER": "${DB_IS_DRIVER}",
+        "DB_INSTANCE_TYPE": "${DB_INSTANCE_TYPE}",
+        "DB_CONTAINER_IP": "${DB_CONTAINER_IP}",
+        "DB_IS_JOB_CLUSTER": "${DB_IS_JOB_CLUSTER}"
+    },
+    "role": {
+        "name": "${DB_CLUSTER_NAME}"
+    },
+    "jmxMetrics": [
+        {
+            "name": "java.lang:name=Code Cache.CollectionUsage",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "CollectionUsage"
+        },
+        {
+            "name": "java.lang:name=Code Cache.CollectionUsageThreshold",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "CollectionUsageThreshold"
+        },
+        {
+            "name": "java.lang:name=Code Cache.CollectionUsageThresholdCount",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=Code Cache.CollectionUsageThresholdExceeded",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=Code Cache.CollectionUsageThresholdSupported",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=Code Cache.MemoryManagerNames",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "MemoryManagerNames"
+        },
+        {
+            "name": "java.lang:name=Code Cache.Name",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=Code Cache.ObjectName",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=Code Cache.PeakUsage",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "PeakUsage"
+        },
+        {
+            "name": "java.lang:name=Code Cache.Type",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "Type"
+        },
+        {
+            "name": "java.lang:name=Code Cache.Usage",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "Usage"
+        },
+        {
+            "name": "java.lang:name=Code Cache.UsageThreshold",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "UsageThreshold"
+        },
+        {
+            "name": "java.lang:name=Code Cache.UsageThresholdCount",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "UsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=Code Cache.UsageThresholdExceeded",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "UsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=Code Cache.UsageThresholdSupported",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "UsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=Code Cache.Valid",
+            "objectName": "java.lang:name=Code Cache,type=MemoryPool",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:name=CodeCacheManager.MemoryPoolNames",
+            "objectName": "java.lang:name=CodeCacheManager,type=MemoryManager",
+            "attribute": "MemoryPoolNames"
+        },
+        {
+            "name": "java.lang:name=CodeCacheManager.Name",
+            "objectName": "java.lang:name=CodeCacheManager,type=MemoryManager",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=CodeCacheManager.ObjectName",
+            "objectName": "java.lang:name=CodeCacheManager,type=MemoryManager",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=CodeCacheManager.Valid",
+            "objectName": "java.lang:name=CodeCacheManager,type=MemoryManager",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.CollectionUsage",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "CollectionUsage"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.CollectionUsageThreshold",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "CollectionUsageThreshold"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.CollectionUsageThresholdCount",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.CollectionUsageThresholdExceeded",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.CollectionUsageThresholdSupported",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.MemoryManagerNames",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "MemoryManagerNames"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.Name",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.ObjectName",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.PeakUsage",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "PeakUsage"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.Type",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "Type"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.Usage",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "Usage"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.UsageThreshold",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "UsageThreshold"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.UsageThresholdCount",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "UsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.UsageThresholdExceeded",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "UsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.UsageThresholdSupported",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "UsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=Compressed Class Space.Valid",
+            "objectName": "java.lang:name=Compressed Class Space,type=MemoryPool",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:name=Metaspace Manager.MemoryPoolNames",
+            "objectName": "java.lang:name=Metaspace Manager,type=MemoryManager",
+            "attribute": "MemoryPoolNames"
+        },
+        {
+            "name": "java.lang:name=Metaspace Manager.Name",
+            "objectName": "java.lang:name=Metaspace Manager,type=MemoryManager",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=Metaspace Manager.ObjectName",
+            "objectName": "java.lang:name=Metaspace Manager,type=MemoryManager",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=Metaspace Manager.Valid",
+            "objectName": "java.lang:name=Metaspace Manager,type=MemoryManager",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:name=Metaspace.CollectionUsage",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "CollectionUsage"
+        },
+        {
+            "name": "java.lang:name=Metaspace.CollectionUsageThreshold",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "CollectionUsageThreshold"
+        },
+        {
+            "name": "java.lang:name=Metaspace.CollectionUsageThresholdCount",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=Metaspace.CollectionUsageThresholdExceeded",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=Metaspace.CollectionUsageThresholdSupported",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=Metaspace.MemoryManagerNames",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "MemoryManagerNames"
+        },
+        {
+            "name": "java.lang:name=Metaspace.Name",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=Metaspace.ObjectName",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=Metaspace.PeakUsage",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "PeakUsage"
+        },
+        {
+            "name": "java.lang:name=Metaspace.Type",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "Type"
+        },
+        {
+            "name": "java.lang:name=Metaspace.Usage",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "Usage"
+        },
+        {
+            "name": "java.lang:name=Metaspace.UsageThreshold",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "UsageThreshold"
+        },
+        {
+            "name": "java.lang:name=Metaspace.UsageThresholdCount",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "UsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=Metaspace.UsageThresholdExceeded",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "UsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=Metaspace.UsageThresholdSupported",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "UsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=Metaspace.Valid",
+            "objectName": "java.lang:name=Metaspace,type=MemoryPool",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.CollectionUsage",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "CollectionUsage"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.CollectionUsageThreshold",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "CollectionUsageThreshold"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.CollectionUsageThresholdCount",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.CollectionUsageThresholdExceeded",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.CollectionUsageThresholdSupported",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.MemoryManagerNames",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "MemoryManagerNames"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.Name",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.ObjectName",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.PeakUsage",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "PeakUsage"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.Type",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "Type"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.Usage",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "Usage"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.UsageThreshold",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "UsageThreshold"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.UsageThresholdCount",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "UsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.UsageThresholdExceeded",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "UsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.UsageThresholdSupported",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "UsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=PS Eden Space.Valid",
+            "objectName": "java.lang:name=PS Eden Space,type=MemoryPool",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:name=PS MarkSweep.CollectionCount",
+            "objectName": "java.lang:name=PS MarkSweep,type=GarbageCollector",
+            "attribute": "CollectionCount"
+        },
+        {
+            "name": "java.lang:name=PS MarkSweep.CollectionTime",
+            "objectName": "java.lang:name=PS MarkSweep,type=GarbageCollector",
+            "attribute": "CollectionTime"
+        },
+        {
+            "name": "java.lang:name=PS MarkSweep.LastGcInfo",
+            "objectName": "java.lang:name=PS MarkSweep,type=GarbageCollector",
+            "attribute": "LastGcInfo"
+        },
+        {
+            "name": "java.lang:name=PS MarkSweep.MemoryPoolNames",
+            "objectName": "java.lang:name=PS MarkSweep,type=GarbageCollector",
+            "attribute": "MemoryPoolNames"
+        },
+        {
+            "name": "java.lang:name=PS MarkSweep.Name",
+            "objectName": "java.lang:name=PS MarkSweep,type=GarbageCollector",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=PS MarkSweep.ObjectName",
+            "objectName": "java.lang:name=PS MarkSweep,type=GarbageCollector",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=PS MarkSweep.Valid",
+            "objectName": "java.lang:name=PS MarkSweep,type=GarbageCollector",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.CollectionUsage",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "CollectionUsage"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.CollectionUsageThreshold",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "CollectionUsageThreshold"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.CollectionUsageThresholdCount",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.CollectionUsageThresholdExceeded",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.CollectionUsageThresholdSupported",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.MemoryManagerNames",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "MemoryManagerNames"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.Name",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.ObjectName",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.PeakUsage",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "PeakUsage"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.Type",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "Type"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.Usage",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "Usage"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.UsageThreshold",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "UsageThreshold"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.UsageThresholdCount",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "UsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.UsageThresholdExceeded",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "UsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.UsageThresholdSupported",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "UsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=PS Old Gen.Valid",
+            "objectName": "java.lang:name=PS Old Gen,type=MemoryPool",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:name=PS Scavenge.CollectionCount",
+            "objectName": "java.lang:name=PS Scavenge,type=GarbageCollector",
+            "attribute": "CollectionCount"
+        },
+        {
+            "name": "java.lang:name=PS Scavenge.CollectionTime",
+            "objectName": "java.lang:name=PS Scavenge,type=GarbageCollector",
+            "attribute": "CollectionTime"
+        },
+        {
+            "name": "java.lang:name=PS Scavenge.LastGcInfo",
+            "objectName": "java.lang:name=PS Scavenge,type=GarbageCollector",
+            "attribute": "LastGcInfo"
+        },
+        {
+            "name": "java.lang:name=PS Scavenge.MemoryPoolNames",
+            "objectName": "java.lang:name=PS Scavenge,type=GarbageCollector",
+            "attribute": "MemoryPoolNames"
+        },
+        {
+            "name": "java.lang:name=PS Scavenge.Name",
+            "objectName": "java.lang:name=PS Scavenge,type=GarbageCollector",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=PS Scavenge.ObjectName",
+            "objectName": "java.lang:name=PS Scavenge,type=GarbageCollector",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=PS Scavenge.Valid",
+            "objectName": "java.lang:name=PS Scavenge,type=GarbageCollector",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.CollectionUsage",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "CollectionUsage"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.CollectionUsageThreshold",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "CollectionUsageThreshold"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.CollectionUsageThresholdCount",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.CollectionUsageThresholdExceeded",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.CollectionUsageThresholdSupported",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "CollectionUsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.MemoryManagerNames",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "MemoryManagerNames"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.Name",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.ObjectName",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.PeakUsage",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "PeakUsage"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.Type",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "Type"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.Usage",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "Usage"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.UsageThreshold",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "UsageThreshold"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.UsageThresholdCount",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "UsageThresholdCount"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.UsageThresholdExceeded",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "UsageThresholdExceeded"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.UsageThresholdSupported",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "UsageThresholdSupported"
+        },
+        {
+            "name": "java.lang:name=PS Survivor Space.Valid",
+            "objectName": "java.lang:name=PS Survivor Space,type=MemoryPool",
+            "attribute": "Valid"
+        },
+        {
+            "name": "java.lang:type=ClassLoading.LoadedClassCount",
+            "objectName": "java.lang:type=ClassLoading",
+            "attribute": "LoadedClassCount"
+        },
+        {
+            "name": "java.lang:type=ClassLoading.ObjectName",
+            "objectName": "java.lang:type=ClassLoading",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:type=ClassLoading.TotalLoadedClassCount",
+            "objectName": "java.lang:type=ClassLoading",
+            "attribute": "TotalLoadedClassCount"
+        },
+        {
+            "name": "java.lang:type=ClassLoading.UnloadedClassCount",
+            "objectName": "java.lang:type=ClassLoading",
+            "attribute": "UnloadedClassCount"
+        },
+        {
+            "name": "java.lang:type=ClassLoading.Verbose",
+            "objectName": "java.lang:type=ClassLoading",
+            "attribute": "Verbose"
+        },
+        {
+            "name": "java.lang:type=Compilation.CompilationTimeMonitoringSupported",
+            "objectName": "java.lang:type=Compilation",
+            "attribute": "CompilationTimeMonitoringSupported"
+        },
+        {
+            "name": "java.lang:type=Compilation.Name",
+            "objectName": "java.lang:type=Compilation",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:type=Compilation.ObjectName",
+            "objectName": "java.lang:type=Compilation",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:type=Compilation.TotalCompilationTime",
+            "objectName": "java.lang:type=Compilation",
+            "attribute": "TotalCompilationTime"
+        },
+        {
+            "name": "java.lang:type=Memory.HeapMemoryUsage",
+            "objectName": "java.lang:type=Memory",
+            "attribute": "HeapMemoryUsage"
+        },
+        {
+            "name": "java.lang:type=Memory.NonHeapMemoryUsage",
+            "objectName": "java.lang:type=Memory",
+            "attribute": "NonHeapMemoryUsage"
+        },
+        {
+            "name": "java.lang:type=Memory.ObjectName",
+            "objectName": "java.lang:type=Memory",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:type=Memory.ObjectPendingFinalizationCount",
+            "objectName": "java.lang:type=Memory",
+            "attribute": "ObjectPendingFinalizationCount"
+        },
+        {
+            "name": "java.lang:type=Memory.Verbose",
+            "objectName": "java.lang:type=Memory",
+            "attribute": "Verbose"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.Arch",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "Arch"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.AvailableProcessors",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "AvailableProcessors"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.CommittedVirtualMemorySize",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "CommittedVirtualMemorySize"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.FreePhysicalMemorySize",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "FreePhysicalMemorySize"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.FreeSwapSpaceSize",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "FreeSwapSpaceSize"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.MaxFileDescriptorCount",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "MaxFileDescriptorCount"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.Name",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.ObjectName",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.OpenFileDescriptorCount",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "OpenFileDescriptorCount"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.ProcessCpuLoad",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "ProcessCpuLoad"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.ProcessCpuTime",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "ProcessCpuTime"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.SystemCpuLoad",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "SystemCpuLoad"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.SystemLoadAverage",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "SystemLoadAverage"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.TotalPhysicalMemorySize",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "TotalPhysicalMemorySize"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.TotalSwapSpaceSize",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "TotalSwapSpaceSize"
+        },
+        {
+            "name": "java.lang:type=OperatingSystem.Version",
+            "objectName": "java.lang:type=OperatingSystem",
+            "attribute": "Version"
+        },
+        {
+            "name": "java.lang:type=Runtime.BootClassPath",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "BootClassPath"
+        },
+        {
+            "name": "java.lang:type=Runtime.BootClassPathSupported",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "BootClassPathSupported"
+        },
+        {
+            "name": "java.lang:type=Runtime.ClassPath",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "ClassPath"
+        },
+        {
+            "name": "java.lang:type=Runtime.InputArguments",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "InputArguments"
+        },
+        {
+            "name": "java.lang:type=Runtime.LibraryPath",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "LibraryPath"
+        },
+        {
+            "name": "java.lang:type=Runtime.ManagementSpecVersion",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "ManagementSpecVersion"
+        },
+        {
+            "name": "java.lang:type=Runtime.Name",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "Name"
+        },
+        {
+            "name": "java.lang:type=Runtime.ObjectName",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:type=Runtime.SpecName",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "SpecName"
+        },
+        {
+            "name": "java.lang:type=Runtime.SpecVendor",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "SpecVendor"
+        },
+        {
+            "name": "java.lang:type=Runtime.SpecVersion",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "SpecVersion"
+        },
+        {
+            "name": "java.lang:type=Runtime.StartTime",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "StartTime"
+        },
+        {
+            "name": "java.lang:type=Runtime.SystemProperties",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "SystemProperties"
+        },
+        {
+            "name": "java.lang:type=Runtime.Uptime",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "Uptime"
+        },
+        {
+            "name": "java.lang:type=Runtime.VmName",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "VmName"
+        },
+        {
+            "name": "java.lang:type=Runtime.VmVendor",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "VmVendor"
+        },
+        {
+            "name": "java.lang:type=Runtime.VmVersion",
+            "objectName": "java.lang:type=Runtime",
+            "attribute": "VmVersion"
+        },
+        {
+            "name": "java.lang:type=Threading.AllThreadIds",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "AllThreadIds"
+        },
+        {
+            "name": "java.lang:type=Threading.CurrentThreadAllocatedBytes",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "CurrentThreadAllocatedBytes"
+        },
+        {
+            "name": "java.lang:type=Threading.CurrentThreadCpuTime",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "CurrentThreadCpuTime"
+        },
+        {
+            "name": "java.lang:type=Threading.CurrentThreadCpuTimeSupported",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "CurrentThreadCpuTimeSupported"
+        },
+        {
+            "name": "java.lang:type=Threading.CurrentThreadUserTime",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "CurrentThreadUserTime"
+        },
+        {
+            "name": "java.lang:type=Threading.DaemonThreadCount",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "DaemonThreadCount"
+        },
+        {
+            "name": "java.lang:type=Threading.ObjectMonitorUsageSupported",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ObjectMonitorUsageSupported"
+        },
+        {
+            "name": "java.lang:type=Threading.ObjectName",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ObjectName"
+        },
+        {
+            "name": "java.lang:type=Threading.PeakThreadCount",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "PeakThreadCount"
+        },
+        {
+            "name": "java.lang:type=Threading.SynchronizerUsageSupported",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "SynchronizerUsageSupported"
+        },
+        {
+            "name": "java.lang:type=Threading.ThreadAllocatedMemoryEnabled",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ThreadAllocatedMemoryEnabled"
+        },
+        {
+            "name": "java.lang:type=Threading.ThreadAllocatedMemorySupported",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ThreadAllocatedMemorySupported"
+        },
+        {
+            "name": "java.lang:type=Threading.ThreadContentionMonitoringEnabled",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ThreadContentionMonitoringEnabled"
+        },
+        {
+            "name": "java.lang:type=Threading.ThreadContentionMonitoringSupported",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ThreadContentionMonitoringSupported"
+        },
+        {
+            "name": "java.lang:type=Threading.ThreadCount",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ThreadCount"
+        },
+        {
+            "name": "java.lang:type=Threading.ThreadCpuTimeEnabled",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ThreadCpuTimeEnabled"
+        },
+        {
+            "name": "java.lang:type=Threading.ThreadCpuTimeSupported",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ThreadCpuTimeSupported"
+        },
+        {
+            "name": "java.lang:type=Threading.TotalStartedThreadCount",
+            "objectName": "java.lang:type=Threading",
+            "attribute": "TotalStartedThreadCount"
+        },
+        {
+            "name": "spark.driver.BlockManager.memory.diskSpaceUsed_MB",
+            "objectName": "metrics:name=spark.driver.BlockManager.memory.diskSpaceUsed_MB,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.BlockManager.memory.maxMem_MB",
+            "objectName": "metrics:name=spark.driver.BlockManager.memory.maxMem_MB,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.BlockManager.memory.maxOffHeapMem_MB",
+            "objectName": "metrics:name=spark.driver.BlockManager.memory.maxOffHeapMem_MB,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.BlockManager.memory.maxOnHeapMem_MB",
+            "objectName": "metrics:name=spark.driver.BlockManager.memory.maxOnHeapMem_MB,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.BlockManager.memory.memUsed_MB",
+            "objectName": "metrics:name=spark.driver.BlockManager.memory.memUsed_MB,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.BlockManager.memory.offHeapMemUsed_MB",
+            "objectName": "metrics:name=spark.driver.BlockManager.memory.offHeapMemUsed_MB,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.BlockManager.memory.onHeapMemUsed_MB",
+            "objectName": "metrics:name=spark.driver.BlockManager.memory.onHeapMemUsed_MB,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.BlockManager.memory.remainingMem_MB",
+            "objectName": "metrics:name=spark.driver.BlockManager.memory.remainingMem_MB,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.BlockManager.memory.remainingOffHeapMem_MB",
+            "objectName": "metrics:name=spark.driver.BlockManager.memory.remainingOffHeapMem_MB,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.BlockManager.memory.remainingOnHeapMem_MB",
+            "objectName": "metrics:name=spark.driver.BlockManager.memory.remainingOnHeapMem_MB,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.compilationTime.50thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.compilationTime.75thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.compilationTime.95thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.compilationTime.98thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.compilationTime.999thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.compilationTime.99thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.compilationTime.Count",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.compilationTime.Max",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.compilationTime.Mean",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.compilationTime.Min",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.compilationTime.SnapshotSize",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "SnapshotSize"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.compilationTime.StdDev",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.compilationTime,type=histograms",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedClassSize.50thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedClassSize.75thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedClassSize.95thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedClassSize.98thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedClassSize.999thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedClassSize.99thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedClassSize.Count",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedClassSize.Max",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedClassSize.Mean",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedClassSize.Min",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedClassSize.SnapshotSize",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "SnapshotSize"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedClassSize.StdDev",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedClassSize,type=histograms",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedMethodSize.50thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedMethodSize.75thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedMethodSize.95thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedMethodSize.98thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedMethodSize.999thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedMethodSize.99thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedMethodSize.Count",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedMethodSize.Max",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedMethodSize.Mean",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedMethodSize.Min",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedMethodSize.SnapshotSize",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "SnapshotSize"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.generatedMethodSize.StdDev",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.generatedMethodSize,type=histograms",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.sourceCodeSize.50thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.sourceCodeSize.75thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.sourceCodeSize.95thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.sourceCodeSize.98thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.sourceCodeSize.999thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.sourceCodeSize.99thPercentile",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.sourceCodeSize.Count",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.sourceCodeSize.Max",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.sourceCodeSize.Mean",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.sourceCodeSize.Min",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.sourceCodeSize.SnapshotSize",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "SnapshotSize"
+        },
+        {
+            "name": "spark.driver.CodeGenerator.sourceCodeSize.StdDev",
+            "objectName": "metrics:name=spark.driver.CodeGenerator.sourceCodeSize,type=histograms",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.job.activeJobs",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.job.activeJobs,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.job.allJobs",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.job.allJobs,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.messageProcessingTime.50thPercentile",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.messageProcessingTime,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.messageProcessingTime.75thPercentile",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.messageProcessingTime,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.messageProcessingTime.95thPercentile",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.messageProcessingTime,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.messageProcessingTime.98thPercentile",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.messageProcessingTime,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.messageProcessingTime.999thPercentile",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.messageProcessingTime,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.messageProcessingTime.99thPercentile",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.messageProcessingTime,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.messageProcessingTime.Count",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.messageProcessingTime,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.messageProcessingTime.DurationUnit",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.messageProcessingTime,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.messageProcessingTime.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.messageProcessingTime,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.messageProcessingTime.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.messageProcessingTime,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.messageProcessingTime.Max",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.messageProcessingTime,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.messageProcessingTime.Mean",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.messageProcessingTime,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.messageProcessingTime.MeanRate",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.messageProcessingTime,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.messageProcessingTime.Min",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.messageProcessingTime,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.messageProcessingTime.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.messageProcessingTime,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.messageProcessingTime.RateUnit",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.messageProcessingTime,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.messageProcessingTime.StdDev",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.messageProcessingTime,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.stage.failedStages",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.stage.failedStages,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.stage.runningStages",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.stage.runningStages,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.DAGScheduler.stage.waitingStages",
+            "objectName": "metrics:name=spark.driver.DAGScheduler.stage.waitingStages,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.Databricks.directoryCommit.autoVacuumCount",
+            "objectName": "metrics:name=spark.driver.Databricks.directoryCommit.autoVacuumCount,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.directoryCommit.deletedFilesFiltered",
+            "objectName": "metrics:name=spark.driver.Databricks.directoryCommit.deletedFilesFiltered,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.directoryCommit.filterListingCount",
+            "objectName": "metrics:name=spark.driver.Databricks.directoryCommit.filterListingCount,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.directoryCommit.jobCommitCompleted",
+            "objectName": "metrics:name=spark.driver.Databricks.directoryCommit.jobCommitCompleted,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.directoryCommit.markerReadErrors",
+            "objectName": "metrics:name=spark.driver.Databricks.directoryCommit.markerReadErrors,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.directoryCommit.markerRefreshCount",
+            "objectName": "metrics:name=spark.driver.Databricks.directoryCommit.markerRefreshCount,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.directoryCommit.markerRefreshErrors",
+            "objectName": "metrics:name=spark.driver.Databricks.directoryCommit.markerRefreshErrors,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.directoryCommit.markersRead",
+            "objectName": "metrics:name=spark.driver.Databricks.directoryCommit.markersRead,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.directoryCommit.repeatedListCount",
+            "objectName": "metrics:name=spark.driver.Databricks.directoryCommit.repeatedListCount,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.directoryCommit.uncommittedFilesFiltered",
+            "objectName": "metrics:name=spark.driver.Databricks.directoryCommit.uncommittedFilesFiltered,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.directoryCommit.untrackedFilesFound",
+            "objectName": "metrics:name=spark.driver.Databricks.directoryCommit.untrackedFilesFound,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.directoryCommit.vacuumCount",
+            "objectName": "metrics:name=spark.driver.Databricks.directoryCommit.vacuumCount,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.directoryCommit.vacuumErrors",
+            "objectName": "metrics:name=spark.driver.Databricks.directoryCommit.vacuumErrors,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.preemption.numChecks",
+            "objectName": "metrics:name=spark.driver.Databricks.preemption.numChecks,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.preemption.numPoolsAutoExpired",
+            "objectName": "metrics:name=spark.driver.Databricks.preemption.numPoolsAutoExpired,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.preemption.numTasksPreempted",
+            "objectName": "metrics:name=spark.driver.Databricks.preemption.numTasksPreempted,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.preemption.poolStarvationMillis",
+            "objectName": "metrics:name=spark.driver.Databricks.preemption.poolStarvationMillis,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.preemption.schedulerOverheadNanos",
+            "objectName": "metrics:name=spark.driver.Databricks.preemption.schedulerOverheadNanos,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.preemption.taskTimeWastedMillis",
+            "objectName": "metrics:name=spark.driver.Databricks.preemption.taskTimeWastedMillis,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.taskSchedulingLanes.activePools",
+            "objectName": "metrics:name=spark.driver.Databricks.taskSchedulingLanes.activePools,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.taskSchedulingLanes.bypassLaneActivePools",
+            "objectName": "metrics:name=spark.driver.Databricks.taskSchedulingLanes.bypassLaneActivePools,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.taskSchedulingLanes.fastLaneActivePools",
+            "objectName": "metrics:name=spark.driver.Databricks.taskSchedulingLanes.fastLaneActivePools,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.taskSchedulingLanes.finishedQueriesTotalTaskTimeNs",
+            "objectName": "metrics:name=spark.driver.Databricks.taskSchedulingLanes.finishedQueriesTotalTaskTimeNs,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.taskSchedulingLanes.laneCleanup.markedPools",
+            "objectName": "metrics:name=spark.driver.Databricks.taskSchedulingLanes.laneCleanup.markedPools,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.taskSchedulingLanes.laneCleanup.twoPhasePoolsCleaned",
+            "objectName": "metrics:name=spark.driver.Databricks.taskSchedulingLanes.laneCleanup.twoPhasePoolsCleaned,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.taskSchedulingLanes.laneCleanup.zombiePoolsCleaned",
+            "objectName": "metrics:name=spark.driver.Databricks.taskSchedulingLanes.laneCleanup.zombiePoolsCleaned,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.taskSchedulingLanes.preemption.slotTransferNumSuccessfulPreemptionIterations",
+            "objectName": "metrics:name=spark.driver.Databricks.taskSchedulingLanes.preemption.slotTransferNumSuccessfulPreemptionIterations,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.taskSchedulingLanes.preemption.slotTransferNumTasksPreempted",
+            "objectName": "metrics:name=spark.driver.Databricks.taskSchedulingLanes.preemption.slotTransferNumTasksPreempted,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.taskSchedulingLanes.preemption.slotTransferWastedTaskTimeNs",
+            "objectName": "metrics:name=spark.driver.Databricks.taskSchedulingLanes.preemption.slotTransferWastedTaskTimeNs,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.taskSchedulingLanes.slotReservation.numGradualDecrease",
+            "objectName": "metrics:name=spark.driver.Databricks.taskSchedulingLanes.slotReservation.numGradualDecrease,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.taskSchedulingLanes.slotReservation.numQuickDrop",
+            "objectName": "metrics:name=spark.driver.Databricks.taskSchedulingLanes.slotReservation.numQuickDrop,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.taskSchedulingLanes.slotReservation.numQuickJump",
+            "objectName": "metrics:name=spark.driver.Databricks.taskSchedulingLanes.slotReservation.numQuickJump,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.taskSchedulingLanes.slotReservation.slotsReserved",
+            "objectName": "metrics:name=spark.driver.Databricks.taskSchedulingLanes.slotReservation.slotsReserved,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.taskSchedulingLanes.slowLaneActivePools",
+            "objectName": "metrics:name=spark.driver.Databricks.taskSchedulingLanes.slowLaneActivePools,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.Databricks.taskSchedulingLanes.totalQueryGroupsFinished",
+            "objectName": "metrics:name=spark.driver.Databricks.taskSchedulingLanes.totalQueryGroupsFinished,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.DirectPoolMemory",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.DirectPoolMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.JVMHeapMemory",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.JVMHeapMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.JVMOffHeapMemory",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.JVMOffHeapMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.MajorGCCount",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.MajorGCCount,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.MajorGCTime",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.MajorGCTime,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.MappedPoolMemory",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.MappedPoolMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.MinorGCCount",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.MinorGCCount,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.MinorGCTime",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.MinorGCTime,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.OffHeapExecutionMemory",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.OffHeapExecutionMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.OffHeapStorageMemory",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.OffHeapStorageMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.OffHeapUnifiedMemory",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.OffHeapUnifiedMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.OnHeapExecutionMemory",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.OnHeapExecutionMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.OnHeapStorageMemory",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.OnHeapStorageMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.OnHeapUnifiedMemory",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.OnHeapUnifiedMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.ProcessTreeJVMRSSMemory",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.ProcessTreeJVMRSSMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.ProcessTreeJVMVMemory",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.ProcessTreeJVMVMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.ProcessTreeOtherRSSMemory",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.ProcessTreeOtherRSSMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.ProcessTreeOtherVMemory",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.ProcessTreeOtherVMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.ProcessTreePythonRSSMemory",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.ProcessTreePythonRSSMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.ProcessTreePythonVMemory",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.ProcessTreePythonVMemory,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.ExecutorMetrics.TotalGCTime",
+            "objectName": "metrics:name=spark.driver.ExecutorMetrics.TotalGCTime,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.HiveExternalCatalog.fileCacheHits",
+            "objectName": "metrics:name=spark.driver.HiveExternalCatalog.fileCacheHits,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.HiveExternalCatalog.filesDiscovered",
+            "objectName": "metrics:name=spark.driver.HiveExternalCatalog.filesDiscovered,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.HiveExternalCatalog.hiveClientCalls",
+            "objectName": "metrics:name=spark.driver.HiveExternalCatalog.hiveClientCalls,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.HiveExternalCatalog.parallelListingJobCount",
+            "objectName": "metrics:name=spark.driver.HiveExternalCatalog.parallelListingJobCount,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.HiveExternalCatalog.partitionsFetched",
+            "objectName": "metrics:name=spark.driver.HiveExternalCatalog.partitionsFetched,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.JVMCPU.jvmCpuTime",
+            "objectName": "metrics:name=spark.driver.JVMCPU.jvmCpuTime,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DBCEventLoggingListener,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.DataPlaneEventListener,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.backend.daemon.driver.NephosColdQueryListener,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.photon.PhotonCleanupListener,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.sql.execution.SparkEBJCleanupListener,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.spark.util.UsageLoggingListener,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.advice.AdvisorListener,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.debugger.QueryWatchdogListener,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.execution.ui.IOCacheListener,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.com.databricks.sql.logging.QueryProfileListener,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.QueryProfileListener,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.execution.ui.SQLAppStatusListener,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.sql.hive.thriftserver.ui.HiveThriftServer2Listener,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.listenerProcessingTime.org.apache.spark.status.AppStatusListener,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.numEventsPosted",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.numEventsPosted,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.listenerProcessingTime,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.numDroppedEvents",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.numDroppedEvents,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.appStatus.size",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.appStatus.size,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.listenerProcessingTime,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.numDroppedEvents",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.numDroppedEvents,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.executorManagement.size",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.executorManagement.size,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.listenerProcessingTime,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.numDroppedEvents",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.numDroppedEvents,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.query-profile-logging-queue.size",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.query-profile-logging-queue.size,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.listenerProcessingTime,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.numDroppedEvents",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.numDroppedEvents,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.shared.size",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.shared.size,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime.50thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime,type=timers",
+            "attribute": "50thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime.75thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime,type=timers",
+            "attribute": "75thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime.95thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime,type=timers",
+            "attribute": "95thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime.98thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime,type=timers",
+            "attribute": "98thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime.999thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime,type=timers",
+            "attribute": "999thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime.99thPercentile",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime,type=timers",
+            "attribute": "99thPercentile"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime.Count",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime,type=timers",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime.DurationUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime,type=timers",
+            "attribute": "DurationUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime.FifteenMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime,type=timers",
+            "attribute": "FifteenMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime.FiveMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime,type=timers",
+            "attribute": "FiveMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime.Max",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime,type=timers",
+            "attribute": "Max"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime.Mean",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime,type=timers",
+            "attribute": "Mean"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime.MeanRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime,type=timers",
+            "attribute": "MeanRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime.Min",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime,type=timers",
+            "attribute": "Min"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime.OneMinuteRate",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime,type=timers",
+            "attribute": "OneMinuteRate"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime.RateUnit",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime,type=timers",
+            "attribute": "RateUnit"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime.StdDev",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.listenerProcessingTime,type=timers",
+            "attribute": "StdDev"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.numDroppedEvents",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.numDroppedEvents,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.LiveListenerBus.queue.streams.size",
+            "objectName": "metrics:name=spark.driver.LiveListenerBus.queue.streams.size,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.SparkSQLOperationManager.numHiveOperations",
+            "objectName": "metrics:name=spark.driver.SparkSQLOperationManager.numHiveOperations,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.SparkStatusTracker.numInconsistentGetJobInfoResponses",
+            "objectName": "metrics:name=spark.driver.SparkStatusTracker.numInconsistentGetJobInfoResponses,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.appStatus.jobDuration",
+            "objectName": "metrics:name=spark.driver.appStatus.jobDuration,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.driver.appStatus.jobs.failedJobs",
+            "objectName": "metrics:name=spark.driver.appStatus.jobs.failedJobs,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.appStatus.jobs.succeededJobs",
+            "objectName": "metrics:name=spark.driver.appStatus.jobs.succeededJobs,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.appStatus.stages.completedStages",
+            "objectName": "metrics:name=spark.driver.appStatus.stages.completedStages,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.appStatus.stages.failedStages",
+            "objectName": "metrics:name=spark.driver.appStatus.stages.failedStages,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.appStatus.stages.skippedStages",
+            "objectName": "metrics:name=spark.driver.appStatus.stages.skippedStages,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.appStatus.tasks.completedTasks",
+            "objectName": "metrics:name=spark.driver.appStatus.tasks.completedTasks,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.appStatus.tasks.excludedExecutors",
+            "objectName": "metrics:name=spark.driver.appStatus.tasks.excludedExecutors,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.appStatus.tasks.failedTasks",
+            "objectName": "metrics:name=spark.driver.appStatus.tasks.failedTasks,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.appStatus.tasks.killedTasks",
+            "objectName": "metrics:name=spark.driver.appStatus.tasks.killedTasks,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.appStatus.tasks.skippedTasks",
+            "objectName": "metrics:name=spark.driver.appStatus.tasks.skippedTasks,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.driver.appStatus.tasks.unexcludedExecutors",
+            "objectName": "metrics:name=spark.driver.appStatus.tasks.unexcludedExecutors,type=counters",
+            "attribute": "Count"
+        },
+        {
+            "name": "spark.streaming.eventTime-watermark",
+            "objectName": "metrics:name=spark.driver.spark.streaming.*.eventTime-watermark,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.streaming.inputRate-total",
+            "objectName": "metrics:name=spark.driver.spark.streaming.*.inputRate-total,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.streaming.latency",
+            "objectName": "metrics:name=spark.driver.spark.streaming.*.latency,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.streaming.processingRate-total",
+            "objectName": "metrics:name=spark.driver.spark.streaming.*.processingRate-total,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.streaming.states-rowsTotal",
+            "objectName": "metrics:name=spark.driver.spark.streaming.*.states-rowsTotal,type=gauges",
+            "attribute": "Number"
+        },
+        {
+            "name": "spark.streaming.states-usedBytes",
+            "objectName": "metrics:name=spark.driver.spark.streaming.*.states-usedBytes,type=gauges",
+            "attribute": "Number"
+        }
+    ]
+}
