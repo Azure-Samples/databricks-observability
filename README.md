@@ -20,14 +20,12 @@ The demo is automated and can be deployed using Terraform with just two commands
 
 ### Prerequisites
 
-(ideally very short, if any)
-
 * [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli)
 * [Terraform](https://www.terraform.io/downloads.html)
 
-### Installation
+Note: you can also use [Azure Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/overview) to avoid having to install software locally.
 
-(ideally very short)
+### Installation
 
 * `git clone https://github.com/Azure-Samples/databricks-observability.git`
 
@@ -35,7 +33,13 @@ The demo is automated and can be deployed using Terraform with just two commands
 
 * Download the latest [Application Insights Java agent JAR](https://github.com/microsoft/ApplicationInsights-Java/releases) to the project directory. Rename the file to `applicationinsights-agent.jar` in the repository folder.
 
-* Log in with Azure CLI:
+  Alternatively, run this command:
+
+  ```shell
+  wget -O applicationinsights-agent.jar https://github.com/microsoft/ApplicationInsights-Java/releases/download/3.4.13/applicationinsights-agent-3.4.13.jar
+  ```
+
+* Log in with Azure CLI *(in Azure Cloud Shell, skip this step)*:
 
   ```shell
   az login
@@ -48,7 +52,7 @@ The demo is automated and can be deployed using Terraform with just two commands
   terraform apply
   ```
 
-* When prompted, answer `yes` to deploy the solution.
+  When prompted, answer `yes` to deploy the solution.
 
 ⚠️ This sets up a cluster of two nodes, and recurring jobs running every minute, so that the cluster never automatically shuts down. **This will incur high costs if you forget to tear down the resources!**
 
@@ -86,7 +90,7 @@ customMetrics
 
 ```kql
 customMetrics
-| where name startswith "spark"
+| where name startswith 'spark'
 | where name contains 'Memory'
 | project-rename memory_bytes = value
 | render timechart
