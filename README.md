@@ -23,7 +23,7 @@ The demo is automated and can be deployed using Terraform with just two commands
 * [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli)
 * [Terraform](https://www.terraform.io/downloads.html)
 
-Note: you can also use [Azure Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/overview) to avoid having to install software locally.
+Note: you can also use [Azure Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/overview) to avoid having to install software locally.
 
 ### Installation
 
@@ -90,7 +90,7 @@ customMetrics
 
 ```kql
 customMetrics
-| where name startswith "spark"
+| where name startswith 'spark'
 | where name contains 'Memory'
 | project-rename memory_bytes = value
 | render timechart
