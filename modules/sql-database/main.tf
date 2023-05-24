@@ -4,7 +4,7 @@ resource "random_id" "username" {
 }
 
 resource "random_password" "password" {
-  length  = 10
+  length  = 30
   special = true
 }
 
