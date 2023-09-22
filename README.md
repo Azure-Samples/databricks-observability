@@ -218,7 +218,7 @@ The configuration for the `applicationinsights.json` files was initially generat
 
 ## Known limitations
 
-- The use of MDC in [`telemetry-helper.py`](modules/databricks/notebooks/telemetry-helper.py) attempts to make Java and Python telemetry correlatable. Ideally, the distributed trace would seamlessly extend from Python into the Java telemetry. While the demonstrated approach allows manually correlating _some_ Java telemetry given a Python trace context, it does not ensure that the Java telemetry can be traced to its Python root span via the trace context of the Java telemetry.
+- The use of MDC in [`telemetry-helper.py`](modules/databricks/notebooks/telemetry-helper.py) allows to correlate some Java telemetry manually with a Python root span. Ideally, the distributed trace would seamlessly extend from Python into the Java telemetry. Unfortunately, MDC does not allow to modify the trace context of the Java telemetry, but is instead used to extend the custom dimensions of the log entries.
 
 ## Main contributors
 
