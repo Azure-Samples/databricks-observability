@@ -131,5 +131,12 @@ def run_with_telemetry(path: str, timeout_seconds: int, arguments: Any = None) -
             # Write the current context into the carrier.
             TraceContextTextMapPropagator().inject(carrier)
             token = json.dumps(carrier)
+
+            # Ensure that the driver/executor logs are correlatable through MDC using
+            # the TraceContext of the PySpark observability layer.
+            # https://spark.apache.org/docs/latest/configuration.html#configuring-logging
+            spark.sparkContext.setLocalProperty("mdc.pyspark_trace_id", trace.format_trace_id(trace.get_current_span().get_span_context().trace_id))
+            spark.sparkContext.setLocalProperty("mdc.pyspark_span_id", trace.format_span_id(trace.get_current_span().get_span_context().span_id))
+
             arguments["_opentelemetry_trace_context"] = token
             dbutils.notebook.run(path, timeout_seconds, arguments)
