@@ -216,6 +216,10 @@ Each executor agent reports its metric under the common Application Insights met
 
 The configuration for the `applicationinsights.json` files was initially generated with this [notebook](assets/dump-jmx.ipynb) to collect MBean information from each cluster node.
 
+## Known limitations
+
+- The use of MDC in [`telemetry-helper.py`](modules/databricks/notebooks/telemetry-helper.py) attempts to make Java and Python telemetry correlatable. Ideally, the distributed trace would seamlessly extend from Python into the Java telemetry. While the demonstrated approach allows manually correlating _some_ Java telemetry given a Python trace context, it does not ensure that the Java telemetry can be traced to its Python root span via the trace context of the Java telemetry.
+
 ## Main contributors
 
 * Bastian Burger

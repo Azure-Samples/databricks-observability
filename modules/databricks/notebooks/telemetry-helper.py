@@ -132,8 +132,10 @@ def run_with_telemetry(path: str, timeout_seconds: int, arguments: Any = None) -
             TraceContextTextMapPropagator().inject(carrier)
             token = json.dumps(carrier)
 
-            # Ensure that the driver/executor logs are correlatable through MDC using
-            # the TraceContext of the PySpark observability layer.
+            # The use of MDC allows us to correlate (Java) executor logs given a
+            # known Python trace context. The correlation needs to be
+            # established manually via the use of the `mdc.pyspark*` custom
+            # dimensions.
             # https://spark.apache.org/docs/latest/configuration.html#configuring-logging
             spark.sparkContext.setLocalProperty("mdc.pyspark_trace_id", trace.format_trace_id(trace.get_current_span().get_span_context().trace_id))
             spark.sparkContext.setLocalProperty("mdc.pyspark_span_id", trace.format_span_id(trace.get_current_span().get_span_context().span_id))
