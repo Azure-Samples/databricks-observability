@@ -131,6 +131,5 @@ def run_with_telemetry(path: str, timeout_seconds: int, arguments: Any = None) -
             # Write the current context into the carrier.
             TraceContextTextMapPropagator().inject(carrier)
             token = json.dumps(carrier)
-
             arguments["_opentelemetry_trace_context"] = token
             dbutils.notebook.run(path, timeout_seconds, arguments)
