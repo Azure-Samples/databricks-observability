@@ -164,7 +164,7 @@ resource "databricks_cluster" "default" {
 resource "databricks_library" "opentelemetry" {
   cluster_id = databricks_cluster.default.id
   pypi {
-    package = "azure-monitor-opentelemetry~=1.0.0b10"
+    package = "azure-monitor-opentelemetry~=1.0.0"
   }
 }
 
