@@ -140,6 +140,23 @@ traces
 
 ![Traces](assets/traces.png)
 
+### Python and Java log correlation
+
+By using Spark's [integration with Mapped Diagnostic Context (MDC)](https://spark.apache.org/docs/latest/configuration.html#configuring-logging), as demonstrated in [`sample-telemetry-notebook.py`](modules/databricks/notebooks/sample-telemetry-notebook.py), some Java logs can be correlated with their corresponding Python root span.
+
+```kql
+// Get trace ID via an arbitrary root span.
+let trace_id = dependencies
+| where name == "process trips"
+| project operation_Id
+| limit 1;
+// Fetch the logs from both Python and Java through manual correlation.
+traces
+| where (operation_Id in (trace_id)) or (customDimensions["mdc.pyspark_trace_id"] in (trace_id))
+```
+
+![Log correlation](assets/log_correlation.png)
+
 ## JVM Traces
 
 Traces are automatically collected, allowing to trace distributed requests to services like Azure Storage, SQL Server and other types of storage.
@@ -215,6 +232,10 @@ spark.worker.executor.threadpool.startedTasks
 Each executor agent reports its metric under the common Application Insights metric name, so that the values can be tallied up.
 
 The configuration for the `applicationinsights.json` files was initially generated with this [notebook](assets/dump-jmx.ipynb) to collect MBean information from each cluster node.
+
+## Known limitations
+
+- The use of MDC in [`sample-telemetry-notebook.py`](modules/databricks/notebooks/sample-telemetry-notebook.py) allows to correlate some Java telemetry manually with a Python root span. Ideally, the distributed trace would seamlessly extend from Python into the Java telemetry. Unfortunately, MDC does not allow to modify the trace context of the Java telemetry, but is instead used to extend the custom dimensions of the log entries.
 
 ## Main contributors
 
